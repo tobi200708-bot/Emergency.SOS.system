@@ -33,8 +33,6 @@ import {
 // FIREBASE CONFIGURATION
 // =====================================================
 
-const firebaseConfig = {
-
     // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
 apiKey: "AIzaSyBTGjmpUk_21vRazMncTdNGd1g0r1l20Bg",
