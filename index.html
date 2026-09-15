@@ -1,0 +1,2730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SOS Cloud | Emergency Response System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <!-- Logo -->
+            <a href="#home" class="logo">
+
+                <div class="logo-icon">
+                    <span>+</span>
+                </div>
+
+                <div class="logo-text">
+                    <strong>SOS</strong>
+                    <span>CLOUD</span>
+                </div>
+
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-menu" id="navMenu">
+
+                <a href="#home" class="nav-link active">Home</a>
+
+                <a href="#how-it-works" class="nav-link">
+                    How It Works
+                </a>
+
+                <a href="#features" class="nav-link">
+                    Features
+                </a>
+
+                <a href="#network" class="nav-link">
+                    Emergency Network
+                </a>
+
+                <a href="#dashboard" class="nav-link">
+                    Dashboard
+                </a>
+
+                <a href="#pricing" class="nav-link">
+                    Pricing
+                </a>
+
+                <!-- Mobile SOS -->
+                <button class="mobile-sos-btn" id="mobileSOS">
+                    <span class="pulse-dot"></span>
+                    SOS
+                </button>
+
+            </nav>
+
+            <!-- Right Side -->
+            <div class="nav-actions">
+
+                <!-- Login Button -->
+                <button class="login-btn" id="loginBtn">
+                    Login
+                </button>
+
+                <!-- SOS Button -->
+                <button class="sos-btn" id="sosButton">
+
+                    <span class="sos-icon">+</span>
+
+                    <span>EMERGENCY SOS</span>
+
+                </button>
+
+                <!-- Mobile Menu -->
+                <button class="menu-toggle" id="menuToggle">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= DEMO HOME ================= -->
+
+    <main>
+
+        <section id="home" class="hero-placeholder">
+
+            <div>
+                <span class="status-badge">
+                    ● SYSTEM ONLINE
+                </span>
+
+                <h1>
+                    Cloud-Based
+                    <span>Emergency SOS</span>
+                    System
+                </h1>
+
+                <p>
+                    One tap. Instant alert. Faster emergency response.
+                </p>
+
+                <button class="hero-sos" id="heroSOS">
+                    ACTIVATE EMERGENCY SOS
+                </button>
+            </div>
+
+        </section>
+
+
+        <!-- Demo Sections -->
+
+        <section id="how-it-works" class="demo-section">
+            <h2>How It Works</h2>
+        </section>
+
+        <section id="features" class="demo-section">
+            <h2>Features</h2>
+        </section>
+
+        <section id="network" class="demo-section">
+            <h2>Emergency Network</h2>
+        </section>
+
+        <section id="dashboard" class="demo-section">
+            <h2>Dashboard</h2>
+        </section>
+
+        <section id="pricing" class="demo-section">
+            <h2>Pricing</h2>
+        </section>
+
+    </main>
+
+
+    <!-- ================= SOS MODAL ================= -->
+
+    <div class="sos-modal" id="sosModal">
+
+        <div class="sos-modal-content">
+
+            <button class="close-modal" id="closeModal">
+                ×
+            </button>
+
+            <div class="danger-icon">
+                !
+            </div>
+
+            <h2>Emergency SOS</h2>
+
+            <p>
+                Are you sure you want to activate an emergency alert?
+            </p>
+
+            <div class="modal-actions">
+
+                <button class="cancel-btn" id="cancelSOS">
+                    Cancel
+                </button>
+
+                <button class="confirm-sos" id="confirmSOS">
+                    YES, SEND SOS
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Firebase -->
+    <script type="module" src="firebase.js"></script>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+<!-- =========================================
+     HERO SECTION
+========================================= -->
+
+<section class="hero" id="home">
+
+    <!-- Background Effects -->
+    <div class="hero-grid"></div>
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+
+
+    <div class="hero-container">
+
+        <!-- =====================================
+             LEFT CONTENT
+        ====================================== -->
+
+        <div class="hero-content">
+
+            <!-- System Status -->
+            <div class="hero-status">
+
+                <span class="status-pulse"></span>
+
+                <span>EMERGENCY SYSTEM ONLINE</span>
+
+            </div>
+
+
+            <!-- Main Heading -->
+            <h1 class="hero-title">
+
+                Help, When
+                <span>Every Second</span>
+                Matters.
+
+            </h1>
+
+
+            <!-- Description -->
+            <p class="hero-description">
+
+                A cloud-powered Emergency SOS system that
+                instantly connects you with trusted contacts
+                and emergency responders when you need help most.
+
+            </p>
+
+
+            <!-- Buttons -->
+            <div class="hero-buttons">
+
+                <button
+                    class="hero-sos-button"
+                    id="heroSOSButton">
+
+                    <span class="hero-sos-icon">+</span>
+
+                    <span>ACTIVATE SOS</span>
+
+                    <span class="button-arrow">→</span>
+
+                </button>
+
+
+                <a
+                    href="#how-it-works"
+                    class="hero-outline-button">
+
+                    <span class="play-icon">▶</span>
+
+                    See How It Works
+
+                </a>
+
+            </div>
+
+
+            <!-- Trust Message -->
+            <div class="hero-trust">
+
+                <div class="trust-avatars">
+
+                    <span>✓</span>
+                    <span>✓</span>
+                    <span>✓</span>
+
+                </div>
+
+                <div>
+
+                    <strong>Fast. Connected. Reliable.</strong>
+
+                    <small>
+                        Built for critical moments
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================
+             RIGHT VISUAL
+        ====================================== -->
+
+        <div class="hero-visual">
+
+            <!-- Outer Rings -->
+            <div class="radar-ring radar-ring-1"></div>
+            <div class="radar-ring radar-ring-2"></div>
+            <div class="radar-ring radar-ring-3"></div>
+
+
+            <!-- Connection Lines -->
+            <div class="connection connection-1"></div>
+            <div class="connection connection-2"></div>
+            <div class="connection connection-3"></div>
+
+
+            <!-- Emergency Nodes -->
+
+            <div class="network-node node-contact">
+
+                <div class="node-icon">👤</div>
+
+                <span>Trusted Contact</span>
+
+            </div>
+
+
+            <div class="network-node node-cloud">
+
+                <div class="node-icon">☁</div>
+
+                <span>Cloud System</span>
+
+            </div>
+
+
+            <div class="network-node node-response">
+
+                <div class="node-icon">🚑</div>
+
+                <span>Response Team</span>
+
+            </div>
+
+
+            <!-- Main SOS Circle -->
+
+            <div class="sos-core">
+
+                <div class="sos-pulse"></div>
+
+                <button
+                    class="big-sos-button"
+                    id="bigSOSButton">
+
+                    <span class="big-sos-plus">+</span>
+
+                    <strong>SOS</strong>
+
+                    <small>PRESS FOR HELP</small>
+
+                </button>
+
+            </div>
+
+
+            <!-- Live Status Card -->
+
+            <div class="live-card">
+
+                <div class="live-card-header">
+
+                    <span class="live-indicator"></span>
+
+                    <span>LIVE EMERGENCY NETWORK</span>
+
+                </div>
+
+                <div class="live-card-body">
+
+                    <div class="live-stat">
+
+                        <strong id="responseTime">
+                            &lt; 5s
+                        </strong>
+
+                        <span>Alert Time</span>
+
+                    </div>
+
+                    <div class="live-stat">
+
+                        <strong>24/7</strong>
+
+                        <span>Monitoring</span>
+
+                    </div>
+
+                    <div class="live-stat">
+
+                        <strong>GPS</strong>
+
+                        <span>Location</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================
+         BOTTOM STATISTICS
+    ====================================== -->
+
+    <div class="hero-stats">
+
+        <div class="hero-stat">
+
+            <div class="hero-stat-icon">⚡</div>
+
+            <div>
+                <strong>Instant Alerts</strong>
+                <span>Cloud notification system</span>
+            </div>
+
+        </div>
+
+
+        <div class="hero-stat">
+
+            <div class="hero-stat-icon">📍</div>
+
+            <div>
+                <strong>Live Location</strong>
+                <span>GPS-powered tracking</span>
+            </div>
+
+        </div>
+
+
+        <div class="hero-stat">
+
+            <div class="hero-stat-icon">🔔</div>
+
+            <div>
+                <strong>Smart Notifications</strong>
+                <span>Notify trusted contacts</span>
+            </div>
+
+        </div>
+
+
+        <div class="hero-stat">
+
+            <div class="hero-stat-icon">☁</div>
+
+            <div>
+                <strong>Cloud Powered</strong>
+                <span>Accessible anywhere</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     SOS CONFIRMATION MODAL
+========================================= -->
+
+<div class="hero-sos-modal" id="heroSOSModal">
+
+    <div class="hero-modal-content">
+
+        <button
+            class="hero-modal-close"
+            id="heroModalClose">
+            ×
+        </button>
+
+
+        <div class="modal-danger-icon">
+            !
+        </div>
+
+
+        <h2>Activate Emergency SOS?</h2>
+
+        <p>
+            Your emergency alert will be sent to
+            your configured emergency contacts.
+        </p>
+
+
+        <div class="location-status" id="locationStatus">
+
+            📍 Detecting your location...
+
+        </div>
+
+
+        <div class="hero-modal-buttons">
+
+            <button
+                class="modal-cancel"
+                id="heroModalCancel">
+
+                Cancel
+
+            </button>
+
+
+            <button
+                class="modal-confirm"
+                id="heroModalConfirm">
+
+                SEND SOS
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- =========================================
+     PROBLEM → SOLUTION SECTION
+========================================= -->
+
+<section class="problem-solution" id="problem-solution">
+
+    <!-- Background -->
+    <div class="ps-grid"></div>
+
+    <div class="ps-glow ps-glow-left"></div>
+    <div class="ps-glow ps-glow-right"></div>
+
+
+    <div class="ps-container">
+
+        <!-- =====================================
+             SECTION HEADER
+        ====================================== -->
+
+        <div class="ps-header">
+
+            <span class="section-label">
+                THE PROBLEM
+            </span>
+
+            <h2>
+                In an emergency,
+                <span>every second matters.</span>
+            </h2>
+
+            <p>
+                Traditional emergency communication can be slow,
+                disconnected, and difficult to coordinate.
+                Our cloud-based SOS system turns those critical
+                seconds into immediate action.
+            </p>
+
+        </div>
+
+
+        <!-- =====================================
+             PROBLEM + SOLUTION
+        ====================================== -->
+
+        <div class="ps-comparison">
+
+
+            <!-- =================================
+                 PROBLEM SIDE
+            ================================== -->
+
+            <div class="problem-panel">
+
+                <div class="panel-top">
+
+                    <div class="panel-icon problem-icon">
+                        !
+                    </div>
+
+                    <div>
+
+                        <span class="panel-label">
+                            WITHOUT SOS CLOUD
+                        </span>
+
+                        <h3>
+                            Emergency Response Gaps
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Problem Items -->
+
+                <div class="problem-list">
+
+                    <div class="problem-item">
+
+                        <div class="problem-item-icon">
+                            ⏱
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Precious Time Lost
+                            </strong>
+
+                            <p>
+                                Manually making multiple calls
+                                can delay emergency response.
+                            </p>
+
+                        </div>
+
+                        <span class="problem-x">
+                            ×
+                        </span>
+
+                    </div>
+
+
+                    <div class="problem-item">
+
+                        <div class="problem-item-icon">
+                            📍
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Location Difficult to Share
+                            </strong>
+
+                            <p>
+                                Describing an exact location
+                                during panic can be difficult.
+                            </p>
+
+                        </div>
+
+                        <span class="problem-x">
+                            ×
+                        </span>
+
+                    </div>
+
+
+                    <div class="problem-item">
+
+                        <div class="problem-item-icon">
+                            📞
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Disconnected Communication
+                            </strong>
+
+                            <p>
+                                Families, security teams and
+                                responders may lack shared information.
+                            </p>
+
+                        </div>
+
+                        <span class="problem-x">
+                            ×
+                        </span>
+
+                    </div>
+
+
+                    <div class="problem-item">
+
+                        <div class="problem-item-icon">
+                            ❓
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Limited Visibility
+                            </strong>
+
+                            <p>
+                                No central place to monitor
+                                the emergency status.
+                            </p>
+
+                        </div>
+
+                        <span class="problem-x">
+                            ×
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Problem Footer -->
+
+                <div class="problem-footer">
+
+                    <span class="offline-dot"></span>
+
+                    Emergency information is fragmented
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================
+                 CENTER TRANSFORMATION
+            ================================== -->
+
+            <div class="ps-transform">
+
+                <div class="transform-line"></div>
+
+                <div class="transform-circle">
+
+                    <span>→</span>
+
+                </div>
+
+                <div class="transform-text">
+                    CONNECT
+                </div>
+
+            </div>
+
+
+            <!-- =================================
+                 SOLUTION SIDE
+            ================================== -->
+
+            <div class="solution-panel">
+
+                <div class="panel-top">
+
+                    <div class="panel-icon solution-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <span class="panel-label">
+                            WITH SOS CLOUD
+                        </span>
+
+                        <h3>
+                            Connected Emergency Response
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Solution Items -->
+
+                <div class="solution-list">
+
+                    <div class="solution-item">
+
+                        <div class="solution-item-icon">
+                            ⚡
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                One-Tap SOS
+                            </strong>
+
+                            <p>
+                                Activate an emergency alert
+                                with a single action.
+                            </p>
+
+                        </div>
+
+                        <span class="solution-check">
+                            ✓
+                        </span>
+
+                    </div>
+
+
+                    <div class="solution-item">
+
+                        <div class="solution-item-icon">
+                            📍
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Live GPS Location
+                            </strong>
+
+                            <p>
+                                Automatically attach the user's
+                                current location to the alert.
+                            </p>
+
+                        </div>
+
+                        <span class="solution-check">
+                            ✓
+                        </span>
+
+                    </div>
+
+
+                    <div class="solution-item">
+
+                        <div class="solution-item-icon">
+                            ☁
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Cloud Coordination
+                            </strong>
+
+                            <p>
+                                Store and coordinate emergency
+                                information from one platform.
+                            </p>
+
+                        </div>
+
+                        <span class="solution-check">
+                            ✓
+                        </span>
+
+                    </div>
+
+
+                    <div class="solution-item">
+
+                        <div class="solution-item-icon">
+                            🔔
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Instant Notifications
+                            </strong>
+
+                            <p>
+                                Notify configured contacts and
+                                authorized response teams.
+                            </p>
+
+                        </div>
+
+                        <span class="solution-check">
+                            ✓
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Solution Footer -->
+
+                <div class="solution-footer">
+
+                    <span class="online-dot"></span>
+
+                    Emergency network connected
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================
+             SOLUTION WORKFLOW
+        ====================================== -->
+
+        <div class="workflow-card">
+
+            <div class="workflow-header">
+
+                <div>
+
+                    <span class="section-label">
+                        FROM ALERT TO ACTION
+                    </span>
+
+                    <h3>
+                        One system. One connected response.
+                    </h3>
+
+                </div>
+
+                <button
+                    class="workflow-button"
+                    id="showWorkflow">
+
+                    See The Difference
+                    <span>→</span>
+
+                </button>
+
+            </div>
+
+
+            <div class="workflow">
+
+                <!-- Step 1 -->
+
+                <div class="workflow-step">
+
+                    <div class="workflow-number">
+                        01
+                    </div>
+
+                    <div class="workflow-icon">
+                        🔴
+                    </div>
+
+                    <strong>
+                        SOS Activated
+                    </strong>
+
+                    <span>
+                        User presses SOS
+                    </span>
+
+                </div>
+
+
+                <div class="workflow-connector"></div>
+
+
+                <!-- Step 2 -->
+
+                <div class="workflow-step">
+
+                    <div class="workflow-number">
+                        02
+                    </div>
+
+                    <div class="workflow-icon">
+                        📍
+                    </div>
+
+                    <strong>
+                        Location Captured
+                    </strong>
+
+                    <span>
+                        GPS coordinates attached
+                    </span>
+
+                </div>
+
+
+                <div class="workflow-connector"></div>
+
+
+                <!-- Step 3 -->
+
+                <div class="workflow-step">
+
+                    <div class="workflow-number">
+                        03
+                    </div>
+
+                    <div class="workflow-icon">
+                        ☁
+                    </div>
+
+                    <strong>
+                        Cloud Processing
+                    </strong>
+
+                    <span>
+                        Alert stored securely
+                    </span>
+
+                </div>
+
+
+                <div class="workflow-connector"></div>
+
+
+                <!-- Step 4 -->
+
+                <div class="workflow-step">
+
+                    <div class="workflow-number">
+                        04
+                    </div>
+
+                    <div class="workflow-icon">
+                        🔔
+                    </div>
+
+                    <strong>
+                        Response Notified
+                    </strong>
+
+                    <span>
+                        Contacts receive alert
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================
+             LIVE STATUS
+        ====================================== -->
+
+        <div class="ps-live-status" id="psLiveStatus">
+
+            <span class="live-status-dot"></span>
+
+            <span id="psStatusText">
+                Emergency network ready
+            </span>
+
+            <span class="status-divider"></span>
+
+            <span>
+                Cloud connected
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================
+     HOW IT WORKS SECTION
+========================= -->
+<section class="how-it-works" id="how-it-works">
+
+    <div class="hiw-bg-grid"></div>
+    <div class="hiw-glow hiw-glow-left"></div>
+    <div class="hiw-glow hiw-glow-right"></div>
+
+    <div class="hiw-container">
+
+        <!-- Section Header -->
+        <div class="hiw-header">
+            <span class="hiw-label">
+                <span class="hiw-label-dot"></span>
+                HOW IT WORKS
+            </span>
+
+            <h2>
+                Emergency help in
+                <span>4 simple steps.</span>
+            </h2>
+
+            <p>
+                Our cloud-based SOS system connects you, your trusted contacts,
+                and emergency responders in seconds.
+            </p>
+        </div>
+
+
+        <!-- Steps -->
+        <div class="hiw-steps">
+
+            <!-- Step 1 -->
+            <div class="hiw-step active" data-step="1">
+
+                <div class="hiw-step-number">
+                    01
+                </div>
+
+                <div class="hiw-icon">
+                    <div class="hiw-icon-ring"></div>
+                    <span>🚨</span>
+                </div>
+
+                <div class="hiw-step-content">
+                    <h3>Activate SOS</h3>
+
+                    <p>
+                        Press the emergency SOS button from your phone
+                        or connected device.
+                    </p>
+                </div>
+
+                <div class="hiw-status">
+                    <span></span>
+                    SOS Ready
+                </div>
+
+            </div>
+
+
+            <!-- Connector -->
+            <div class="hiw-connector">
+                <span></span>
+            </div>
+
+
+            <!-- Step 2 -->
+            <div class="hiw-step" data-step="2">
+
+                <div class="hiw-step-number">
+                    02
+                </div>
+
+                <div class="hiw-icon">
+                    <div class="hiw-icon-ring"></div>
+                    <span>📍</span>
+                </div>
+
+                <div class="hiw-step-content">
+                    <h3>Location Captured</h3>
+
+                    <p>
+                        Your GPS location is securely captured and
+                        attached to the emergency alert.
+                    </p>
+                </div>
+
+                <div class="hiw-status">
+                    <span></span>
+                    GPS Connected
+                </div>
+
+            </div>
+
+
+            <!-- Connector -->
+            <div class="hiw-connector">
+                <span></span>
+            </div>
+
+
+            <!-- Step 3 -->
+            <div class="hiw-step" data-step="3">
+
+                <div class="hiw-step-number">
+                    03
+                </div>
+
+                <div class="hiw-icon">
+                    <div class="hiw-icon-ring"></div>
+                    <span>☁️</span>
+                </div>
+
+                <div class="hiw-step-content">
+                    <h3>Cloud Processes</h3>
+
+                    <p>
+                        The emergency data is securely processed by
+                        the cloud and routed to your network.
+                    </p>
+                </div>
+
+                <div class="hiw-status">
+                    <span></span>
+                    Cloud Online
+                </div>
+
+            </div>
+
+
+            <!-- Connector -->
+            <div class="hiw-connector">
+                <span></span>
+            </div>
+
+
+            <!-- Step 4 -->
+            <div class="hiw-step" data-step="4">
+
+                <div class="hiw-step-number">
+                    04
+                </div>
+
+                <div class="hiw-icon">
+                    <div class="hiw-icon-ring"></div>
+                    <span>🔔</span>
+                </div>
+
+                <div class="hiw-step-content">
+                    <h3>Response Notified</h3>
+
+                    <p>
+                        Trusted contacts and emergency responders
+                        receive the alert instantly.
+                    </p>
+                </div>
+
+                <div class="hiw-status">
+                    <span></span>
+                    Response Active
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Live Flow -->
+        <div class="hiw-flow-card">
+
+            <div class="hiw-flow-left">
+
+                <div class="hiw-live-indicator">
+                    <span></span>
+                    LIVE SYSTEM
+                </div>
+
+                <h3>
+                    One alert.
+                    <strong>One connected response.</strong>
+                </h3>
+
+                <p>
+                    From the moment SOS is activated, every step is
+                    connected through the cloud.
+                </p>
+
+            </div>
+
+
+            <div class="hiw-flow-visual">
+
+                <div class="flow-node">
+                    <span class="flow-node-icon">🚨</span>
+                    <small>SOS</small>
+                </div>
+
+                <div class="flow-line">
+                    <span></span>
+                </div>
+
+                <div class="flow-node">
+                    <span class="flow-node-icon">☁️</span>
+                    <small>CLOUD</small>
+                </div>
+
+                <div class="flow-line">
+                    <span></span>
+                </div>
+
+                <div class="flow-node">
+                    <span class="flow-node-icon">👥</span>
+                    <small>RESPONSE</small>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Bottom Status -->
+        <div class="hiw-bottom-status">
+
+            <div>
+                <span class="hiw-online-dot"></span>
+                Emergency network operational
+            </div>
+
+            <div class="hiw-divider"></div>
+
+            <div>
+                Secure cloud connection
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- =========================================
+     LIVE EMERGENCY STATUS SECTION
+========================================= -->
+
+<section class="live-emergency" id="live-emergency">
+
+    <!-- Background -->
+    <div class="les-grid"></div>
+    <div class="les-glow les-glow-red"></div>
+    <div class="les-glow les-glow-green"></div>
+
+    <div class="les-container">
+
+        <!-- Section Header -->
+        <div class="les-header">
+
+            <span class="les-label">
+                <span class="les-label-dot"></span>
+                LIVE EMERGENCY STATUS
+            </span>
+
+            <h2>
+                Know what is happening,
+                <span>right now.</span>
+            </h2>
+
+            <p>
+                Monitor your emergency alert, location, notifications,
+                and response status from one connected cloud dashboard.
+            </p>
+
+        </div>
+
+
+        <!-- Main Status Dashboard -->
+        <div class="les-dashboard">
+
+            <!-- =========================
+                 LEFT STATUS PANEL
+            ========================== -->
+
+            <div class="les-main-card">
+
+                <div class="les-card-header">
+
+                    <div>
+                        <span class="les-small-label">
+                            CURRENT STATUS
+                        </span>
+
+                        <h3 id="lesStatusTitle">
+                            Emergency Active
+                        </h3>
+                    </div>
+
+                    <div
+                        class="les-status-badge active"
+                        id="lesStatusBadge"
+                    >
+                        <span></span>
+                        <strong id="lesStatusText">
+                            ACTIVE
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <!-- Emergency Timer -->
+
+                <div class="les-timer-box">
+
+                    <span class="les-timer-label">
+                        RESPONSE TIME
+                    </span>
+
+                    <div
+                        class="les-timer"
+                        id="lesTimer"
+                    >
+                        00:00
+                    </div>
+
+                    <span class="les-timer-status">
+                        Emergency monitoring in progress
+                    </span>
+
+                </div>
+
+
+                <!-- Progress -->
+
+                <div class="les-progress-section">
+
+                    <div class="les-progress-header">
+
+                        <span>
+                            RESPONSE PROGRESS
+                        </span>
+
+                        <strong id="lesProgressValue">
+                            75%
+                        </strong>
+
+                    </div>
+
+                    <div class="les-progress-bar">
+
+                        <div
+                            class="les-progress-fill"
+                            id="lesProgressFill"
+                            style="width: 75%;"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Emergency Steps -->
+
+                <div class="les-status-steps">
+
+                    <!-- Step 1 -->
+                    <div class="les-status-step completed">
+
+                        <div class="les-step-icon">
+                            ✓
+                        </div>
+
+                        <div>
+                            <strong>SOS Activated</strong>
+                            <small id="lesSosTime">
+                                Just now
+                            </small>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Step 2 -->
+                    <div class="les-status-step completed">
+
+                        <div class="les-step-icon">
+                            ✓
+                        </div>
+
+                        <div>
+                            <strong>Location Captured</strong>
+                            <small id="lesLocationTime">
+                                GPS connected
+                            </small>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Step 3 -->
+                    <div class="les-status-step completed">
+
+                        <div class="les-step-icon">
+                            ✓
+                        </div>
+
+                        <div>
+                            <strong>Cloud Processing</strong>
+                            <small>
+                                Alert synchronized
+                            </small>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Step 4 -->
+                    <div class="les-status-step current">
+
+                        <div class="les-step-icon">
+                            •
+                        </div>
+
+                        <div>
+                            <strong>Response Team</strong>
+                            <small>
+                                Responding now
+                            </small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 RIGHT INFORMATION PANEL
+            ========================== -->
+
+            <div class="les-side-panel">
+
+
+                <!-- Location Card -->
+
+                <div class="les-info-card">
+
+                    <div class="les-info-icon">
+                        📍
+                    </div>
+
+                    <div class="les-info-content">
+
+                        <span>
+                            LIVE LOCATION
+                        </span>
+
+                        <strong id="lesLocation">
+                            Location secured
+                        </strong>
+
+                        <small id="lesCoordinates">
+                            Waiting for GPS...
+                        </small>
+
+                    </div>
+
+                    <div class="les-online">
+                        <span></span>
+                        LIVE
+                    </div>
+
+                </div>
+
+
+                <!-- Trusted Contacts -->
+
+                <div class="les-info-card">
+
+                    <div class="les-info-icon">
+                        👥
+                    </div>
+
+                    <div class="les-info-content">
+
+                        <span>
+                            TRUSTED CONTACTS
+                        </span>
+
+                        <strong>
+                            Notifications Sent
+                        </strong>
+
+                        <small id="lesContactStatus">
+                            3 contacts notified
+                        </small>
+
+                    </div>
+
+                    <div class="les-check">
+                        ✓
+                    </div>
+
+                </div>
+
+
+                <!-- Response Team -->
+
+                <div class="les-info-card">
+
+                    <div class="les-info-icon response-icon">
+                        🚑
+                    </div>
+
+                    <div class="les-info-content">
+
+                        <span>
+                            RESPONSE TEAM
+                        </span>
+
+                        <strong id="lesResponseStatus">
+                            Responding
+                        </strong>
+
+                        <small>
+                            Emergency response notified
+                        </small>
+
+                    </div>
+
+                    <div class="les-response-dot">
+                        <span></span>
+                    </div>
+
+                </div>
+
+
+                <!-- Cloud Connection -->
+
+                <div class="les-cloud-card">
+
+                    <div class="les-cloud-top">
+
+                        <div class="les-cloud-icon">
+                            ☁
+                        </div>
+
+                        <div>
+
+                            <span>
+                                CLOUD SYSTEM
+                            </span>
+
+                            <strong>
+                                Connected
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                    <div class="les-cloud-line">
+
+                        <span></span>
+
+                    </div>
+
+                    <div class="les-cloud-footer">
+
+                        <span>
+                            Data encrypted
+                        </span>
+
+                        <span>
+                            ● Secure
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             LIVE NETWORK BAR
+        ========================== -->
+
+        <div class="les-network">
+
+            <div class="les-network-title">
+
+                <span class="les-live-dot"></span>
+
+                LIVE EMERGENCY NETWORK
+
+            </div>
+
+
+            <div class="les-network-items">
+
+                <div class="les-network-item">
+
+                    <span class="network-icon">
+                        📱
+                    </span>
+
+                    <div>
+                        <strong>User</strong>
+                        <small>Connected</small>
+                    </div>
+
+                </div>
+
+
+                <div class="les-network-line">
+                    <span></span>
+                </div>
+
+
+                <div class="les-network-item">
+
+                    <span class="network-icon">
+                        ☁
+                    </span>
+
+                    <div>
+                        <strong>Cloud</strong>
+                        <small>Processing</small>
+                    </div>
+
+                </div>
+
+
+                <div class="les-network-line">
+                    <span></span>
+                </div>
+
+
+                <div class="les-network-item">
+
+                    <span class="network-icon">
+                        👥
+                    </span>
+
+                    <div>
+                        <strong>Contacts</strong>
+                        <small>Notified</small>
+                    </div>
+
+                </div>
+
+
+                <div class="les-network-line">
+                    <span></span>
+                </div>
+
+
+                <div class="les-network-item">
+
+                    <span class="network-icon">
+                        🚑
+                    </span>
+
+                    <div>
+                        <strong>Response</strong>
+                        <small>Active</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Bottom System Status -->
+
+        <div class="les-bottom-status">
+
+            <span class="les-system-dot"></span>
+
+            Emergency network operational
+
+            <span class="les-separator"></span>
+
+            Last updated:
+            <strong id="lesLastUpdated">
+                Just now
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================
+     CORE FEATURES SECTION
+========================================= -->
+
+<section class="core-features" id="features">
+
+    <!-- Background -->
+    <div class="cf-grid"></div>
+    <div class="cf-glow cf-glow-red"></div>
+    <div class="cf-glow cf-glow-green"></div>
+
+    <div class="cf-container">
+
+        <!-- Section Header -->
+        <div class="cf-header">
+
+            <span class="cf-label">
+                <span class="cf-label-dot"></span>
+                CORE FEATURES
+            </span>
+
+            <h2>
+                Everything you need
+                <span>when it matters.</span>
+            </h2>
+
+            <p>
+                Powerful cloud-connected emergency features designed
+                to detect, communicate, and respond faster.
+            </p>
+
+        </div>
+
+
+        <!-- Feature Grid -->
+        <div class="cf-grid-layout">
+
+            <!-- Feature 1 -->
+            <article
+                class="cf-card active"
+                data-feature="instant-sos"
+            >
+
+                <div class="cf-card-top">
+
+                    <span class="cf-number">
+                        01
+                    </span>
+
+                    <div class="cf-icon">
+                        🚨
+                    </div>
+
+                    <span class="cf-live-tag">
+                        <i></i>
+                        LIVE
+                    </span>
+
+                </div>
+
+                <h3>
+                    One-Tap SOS
+                </h3>
+
+                <p>
+                    Instantly activate an emergency alert with
+                    a single tap when every second counts.
+                </p>
+
+                <button
+                    class="cf-feature-btn"
+                    data-feature="Instant SOS"
+                >
+                    Explore Feature
+                    <span>→</span>
+                </button>
+
+                <div class="cf-card-line"></div>
+
+                <div class="cf-feature-status">
+                    <span></span>
+                    Emergency ready
+                </div>
+
+            </article>
+
+
+            <!-- Feature 2 -->
+            <article
+                class="cf-card"
+                data-feature="gps"
+            >
+
+                <div class="cf-card-top">
+
+                    <span class="cf-number">
+                        02
+                    </span>
+
+                    <div class="cf-icon">
+                        📍
+                    </div>
+
+                    <span class="cf-live-tag">
+                        GPS
+                    </span>
+
+                </div>
+
+                <h3>
+                    Live GPS Location
+                </h3>
+
+                <p>
+                    Share accurate location information with
+                    trusted contacts and response teams.
+                </p>
+
+                <button
+                    class="cf-feature-btn"
+                    data-feature="Live GPS Location"
+                >
+                    Explore Feature
+                    <span>→</span>
+                </button>
+
+                <div class="cf-card-line"></div>
+
+                <div class="cf-feature-status">
+                    <span></span>
+                    Location connected
+                </div>
+
+            </article>
+
+
+            <!-- Feature 3 -->
+            <article
+                class="cf-card"
+                data-feature="notifications"
+            >
+
+                <div class="cf-card-top">
+
+                    <span class="cf-number">
+                        03
+                    </span>
+
+                    <div class="cf-icon">
+                        🔔
+                    </div>
+
+                    <span class="cf-live-tag">
+                        ALERT
+                    </span>
+
+                </div>
+
+                <h3>
+                    Instant Notifications
+                </h3>
+
+                <p>
+                    Automatically notify selected contacts when
+                    an emergency alert is activated.
+                </p>
+
+                <button
+                    class="cf-feature-btn"
+                    data-feature="Instant Notifications"
+                >
+                    Explore Feature
+                    <span>→</span>
+                </button>
+
+                <div class="cf-card-line"></div>
+
+                <div class="cf-feature-status">
+                    <span></span>
+                    Notification system online
+                </div>
+
+            </article>
+
+
+            <!-- Feature 4 -->
+            <article
+                class="cf-card"
+                data-feature="cloud"
+            >
+
+                <div class="cf-card-top">
+
+                    <span class="cf-number">
+                        04
+                    </span>
+
+                    <div class="cf-icon">
+                        ☁️
+                    </div>
+
+                    <span class="cf-live-tag">
+                        CLOUD
+                    </span>
+
+                </div>
+
+                <h3>
+                    Cloud Emergency Processing
+                </h3>
+
+                <p>
+                    Emergency data is securely processed and
+                    synchronized through the cloud.
+                </p>
+
+                <button
+                    class="cf-feature-btn"
+                    data-feature="Cloud Emergency Processing"
+                >
+                    Explore Feature
+                    <span>→</span>
+                </button>
+
+                <div class="cf-card-line"></div>
+
+                <div class="cf-feature-status">
+                    <span></span>
+                    Cloud connected
+                </div>
+
+            </article>
+
+
+            <!-- Feature 5 -->
+            <article
+                class="cf-card"
+                data-feature="contacts"
+            >
+
+                <div class="cf-card-top">
+
+                    <span class="cf-number">
+                        05
+                    </span>
+
+                    <div class="cf-icon">
+                        👥
+                    </div>
+
+                    <span class="cf-live-tag">
+                        SAFE
+                    </span>
+
+                </div>
+
+                <h3>
+                    Trusted Contact Network
+                </h3>
+
+                <p>
+                    Connect family members, friends, security
+                    teams, or other trusted emergency contacts.
+                </p>
+
+                <button
+                    class="cf-feature-btn"
+                    data-feature="Trusted Contact Network"
+                >
+                    Explore Feature
+                    <span>→</span>
+                </button>
+
+                <div class="cf-card-line"></div>
+
+                <div class="cf-feature-status">
+                    <span></span>
+                    Network protected
+                </div>
+
+            </article>
+
+
+            <!-- Feature 6 -->
+            <article
+                class="cf-card"
+                data-feature="dashboard"
+            >
+
+                <div class="cf-card-top">
+
+                    <span class="cf-number">
+                        06
+                    </span>
+
+                    <div class="cf-icon">
+                        📊
+                    </div>
+
+                    <span class="cf-live-tag">
+                        24/7
+                    </span>
+
+                </div>
+
+                <h3>
+                    Emergency Dashboard
+                </h3>
+
+                <p>
+                    Monitor active emergencies, locations,
+                    notifications, and response activity in one place.
+                </p>
+
+                <button
+                    class="cf-feature-btn"
+                    data-feature="Emergency Dashboard"
+                >
+                    Explore Feature
+                    <span>→</span>
+                </button>
+
+                <div class="cf-card-line"></div>
+
+                <div class="cf-feature-status">
+                    <span></span>
+                    Dashboard online
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <!-- Feature Highlight -->
+        <div class="cf-highlight">
+
+            <div class="cf-highlight-icon">
+                ⚡
+            </div>
+
+            <div class="cf-highlight-content">
+
+                <span>
+                    BUILT FOR SPEED
+                </span>
+
+                <h3>
+                    From emergency alert to
+                    <strong>connected response.</strong>
+                </h3>
+
+                <p>
+                    Every feature works together through one
+                    secure cloud-based emergency network.
+                </p>
+
+            </div>
+
+            <div class="cf-highlight-status">
+
+                <span></span>
+
+                SYSTEM ONLINE
+
+            </div>
+
+        </div>
+
+
+        <!-- Bottom Status -->
+        <div class="cf-bottom-status">
+
+            <div>
+                <span class="cf-online-dot"></span>
+                All core systems operational
+            </div>
+
+            <div class="cf-divider"></div>
+
+            <div>
+                Cloud synchronized
+            </div>
+
+            <div class="cf-divider"></div>
+
+            <div>
+                Emergency network ready
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================
+     EMERGENCY NETWORK SECTION
+========================= -->
+
+<section class="en-section" id="emergency-network">
+
+    <div class="en-container">
+
+        <!-- Section Header -->
+        <div class="en-header">
+            <span class="en-eyebrow">
+                <span class="en-pulse"></span>
+                EMERGENCY NETWORK
+            </span>
+
+            <h2>
+                One connected network.<br>
+                <span>Faster emergency response.</span>
+            </h2>
+
+            <p>
+                When an SOS is activated, the system instantly connects
+                the user, cloud services, trusted contacts, location data,
+                and response teams through one secure emergency network.
+            </p>
+        </div>
+
+
+        <!-- Network Dashboard -->
+        <div class="en-network-card">
+
+            <!-- Top Status -->
+            <div class="en-network-top">
+
+                <div>
+                    <span class="en-small-label">
+                        LIVE NETWORK
+                    </span>
+
+                    <h3>
+                        Emergency Response Network
+                    </h3>
+                </div>
+
+                <div class="en-online-status">
+                    <span class="en-status-dot"></span>
+                    ALL SYSTEMS ONLINE
+                </div>
+
+            </div>
+
+
+            <!-- Network Visualization -->
+            <div class="en-network">
+
+                <!-- Connecting Lines -->
+                <div class="en-line en-line-user-cloud"></div>
+                <div class="en-line en-line-cloud-contact"></div>
+                <div class="en-line en-line-cloud-response"></div>
+                <div class="en-line en-line-cloud-location"></div>
+
+                <!-- User Node -->
+                <div class="en-node en-user-node">
+
+                    <div class="en-node-icon">
+                        👤
+                    </div>
+
+                    <div class="en-node-content">
+                        <span class="en-node-status">
+                            SOS ACTIVE
+                        </span>
+
+                        <strong>User</strong>
+
+                        <small>
+                            Emergency activated
+                        </small>
+                    </div>
+
+                </div>
+
+
+                <!-- Cloud Node -->
+                <div class="en-node en-cloud-node">
+
+                    <div class="en-cloud-ring">
+                        <div class="en-node-icon">
+                            ☁️
+                        </div>
+                    </div>
+
+                    <div class="en-node-content">
+
+                        <span class="en-node-status">
+                            PROCESSING
+                        </span>
+
+                        <strong>Cloud System</strong>
+
+                        <small>
+                            Emergency coordination
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Trusted Contacts -->
+                <div class="en-node en-contact-node">
+
+                    <div class="en-node-icon">
+                        👥
+                    </div>
+
+                    <div class="en-node-content">
+
+                        <span class="en-node-status">
+                            NOTIFIED
+                        </span>
+
+                        <strong>Trusted Contacts</strong>
+
+                        <small>
+                            3 contacts alerted
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Response Team -->
+                <div class="en-node en-response-node">
+
+                    <div class="en-node-icon">
+                        🚑
+                    </div>
+
+                    <div class="en-node-content">
+
+                        <span class="en-node-status">
+                            RESPONDING
+                        </span>
+
+                        <strong>Response Team</strong>
+
+                        <small>
+                            Emergency assistance
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Location -->
+                <div class="en-node en-location-node">
+
+                    <div class="en-node-icon">
+                        📍
+                    </div>
+
+                    <div class="en-node-content">
+
+                        <span class="en-node-status">
+                            LIVE
+                        </span>
+
+                        <strong>GPS Location</strong>
+
+                        <small id="en-location-text">
+                            Location available
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Network Information -->
+            <div class="en-network-info">
+
+                <div class="en-info-item">
+
+                    <div class="en-info-icon">
+                        ⚡
+                    </div>
+
+                    <div>
+                        <span>Alert Speed</span>
+                        <strong>&lt; 2 seconds</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="en-info-item">
+
+                    <div class="en-info-icon">
+                        📍
+                    </div>
+
+                    <div>
+                        <span>Location</span>
+                        <strong id="en-gps-status">
+                            Connected
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <div class="en-info-item">
+
+                    <div class="en-info-icon">
+                        🔔
+                    </div>
+
+                    <div>
+                        <span>Notifications</span>
+                        <strong>
+                            Instant
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <div class="en-info-item">
+
+                    <div class="en-info-icon">
+                        🔒
+                    </div>
+
+                    <div>
+                        <span>Connection</span>
+                        <strong>
+                            Secure
+                        </strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Network Features -->
+        <div class="en-features">
+
+            <div class="en-feature-card">
+
+                <div class="en-feature-number">
+                    01
+                </div>
+
+                <div class="en-feature-icon">
+                    📡
+                </div>
+
+                <h3>
+                    Instant Communication
+                </h3>
+
+                <p>
+                    SOS alerts are transmitted through the cloud
+                    to connected emergency contacts immediately.
+                </p>
+
+                <span class="en-feature-status">
+                    ● CONNECTED
+                </span>
+
+            </div>
+
+
+            <div class="en-feature-card">
+
+                <div class="en-feature-number">
+                    02
+                </div>
+
+                <div class="en-feature-icon">
+                    📍
+                </div>
+
+                <h3>
+                    Live Location Sharing
+                </h3>
+
+                <p>
+                    GPS information can be securely shared with
+                    authorized contacts and response teams.
+                </p>
+
+                <span class="en-feature-status">
+                    ● LOCATION LIVE
+                </span>
+
+            </div>
+
+
+            <div class="en-feature-card">
+
+                <div class="en-feature-number">
+                    03
+                </div>
+
+                <div class="en-feature-icon">
+                    🛡️
+                </div>
+
+                <h3>
+                    Secure Cloud Network
+                </h3>
+
+                <p>
+                    Emergency information is processed through
+                    a secure cloud-connected infrastructure.
+                </p>
+
+                <span class="en-feature-status">
+                    ● SECURE
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- Bottom CTA -->
+        <div class="en-bottom">
+
+            <div>
+                <span class="en-small-label">
+                    EMERGENCY INFRASTRUCTURE
+                </span>
+
+                <h3>
+                    Connected when every second matters.
+                </h3>
+            </div>
+
+            <button class="en-test-button" id="enTestNetwork">
+                Test Network
+                <span>→</span>
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================
+     QR / EMERGENCY ACCESS SECTION
+========================================= -->
+
+<section class="qr-section" id="emergency-access">
+
+    <div class="qr-container">
+
+        <!-- Section Header -->
+        <div class="qr-header">
+
+            <span class="qr-eyebrow">
+                <span class="qr-live-dot"></span>
+                EMERGENCY ACCESS
+            </span>
+
+            <h2>
+                Help can start with a
+                <span>single scan.</span>
+            </h2>
+
+            <p>
+                Create a secure emergency QR code that gives
+                authorized people quick access to important
+                emergency information when it matters most.
+            </p>
+
+        </div>
+
+
+        <!-- Main QR Area -->
+        <div class="qr-main-card">
+
+            <!-- Left Content -->
+            <div class="qr-info">
+
+                <span class="qr-label">
+                    PERSONAL EMERGENCY QR
+                </span>
+
+                <h3>
+                    Your emergency information,
+                    always within reach.
+                </h3>
+
+                <p>
+                    Place your QR code on your ID card,
+                    phone lock screen, wallet, vehicle,
+                    or any other accessible location.
+                </p>
+
+
+                <!-- Emergency ID -->
+                <div class="qr-id-box">
+
+                    <div>
+                        <span>EMERGENCY ID</span>
+
+                        <strong id="qrEmergencyId">
+                            SOS-000000
+                        </strong>
+                    </div>
+
+                    <button
+                        id="qrCopyId"
+                        class="qr-copy-btn"
+                        type="button">
+                        Copy
+                    </button>
+
+                </div>
+
+
+                <!-- Access Features -->
+                <div class="qr-access-list">
+
+                    <div class="qr-access-item">
+
+                        <span class="qr-access-icon">
+                            🚨
+                        </span>
+
+                        <div>
+                            <strong>
+                                Emergency Profile
+                            </strong>
+
+                            <small>
+                                Important emergency information
+                            </small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="qr-access-item">
+
+                        <span class="qr-access-icon">
+                            📞
+                        </span>
+
+                        <div>
+                            <strong>
+                                Emergency Contacts
+                            </strong>
+
+                            <small>
+                                Quickly identify trusted contacts
+                            </small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="qr-access-item">
+
+                        <span class="qr-access-icon">
+                            📍
+                        </span>
+
+                        <div>
+                            <strong>
+                                Emergency Location
+                            </strong>
+
+                            <small>
+                                Location sharing requires permission
+                            </small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="qr-access-item">
+
+                        <span class="qr-access-icon">
+                            🔒
+                        </span>
+
+                        <div>
+                            <strong>
+                                Controlled Access
+                            </strong>
+
+                            <small>
+                                Share only authorized information
+                            </small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Generate Button -->
+                <button
+                    id="generateEmergencyQR"
+                    class="qr-generate-btn"
+                    type="button">
+
+                    <span>Generate Emergency QR</span>
+                    <span class="qr-arrow">→</span>
+
+                </button>
+
+            </div>
+
+
+            <!-- Right QR Visual -->
+            <div class="qr-visual">
+
+                <div class="qr-visual-header">
+
+                    <span>
+                        SCAN TO ACCESS
+                    </span>
+
+                    <span class="qr-secure">
+                        🔒 SECURE
+                    </span>
+
+                </div>
+
+
+                <!-- QR Code -->
+                <div class="qr-code-wrapper">
+
+                    <div
+                        id="emergencyQRCode"
+                        class="qr-code">
+                    </div>
+
+                    <div class="qr-scan-corner qr-corner-tl"></div>
+                    <div class="qr-scan-corner qr-corner-tr"></div>
+                    <div class="qr-scan-corner qr-corner-bl"></div>
+                    <div class="qr-scan-corner qr-corner-br"></div>
+
+                </div>
+
+
+                <div class="qr-scan-text">
+
+                    <span class="qr-scan-line"></span>
+
+                    <p>
+                        Scan with any smartphone camera
