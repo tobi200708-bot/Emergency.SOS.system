@@ -2,7 +2,11 @@
 // FIREBASE.JS
 // Emergency SOS Cloud System
 // =====================================================
-
+import {
+    getAuth,
+    onAuthStateChanged,
+    signInAnonymously
+} from "https://www.gstatic.com/firebasejs/12.2.1/firebase-auth.js";
 // Firebase App
 import { initializeApp } from
     "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
