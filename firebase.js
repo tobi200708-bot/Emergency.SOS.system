@@ -46,24 +46,6 @@ appId: "1:831859323537:web:8627060a5cda348fd48530",
 measurementId: "G-FXQ7W4Z1Z3"
 };
 
-    authDomain:
-        "emergency-sos-system-2717b.firebaseapp.com",
-
-    projectId:
-        "emergency-sos-system-2717b",
-
-    storageBucket:
-        "emergency-sos-system-2717b.firebasestorage.app",
-
-    messagingSenderId:
-        "831859323537",
-
-    1:831859323537:web:8627060a5cda348fd48530
-
-    measurementId:
-        "G-T8V9F5B3Q8"
-};
-
 
 // =====================================================
 // INITIALIZE FIREBASE
