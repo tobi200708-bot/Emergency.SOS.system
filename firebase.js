@@ -35,7 +35,16 @@ import {
 
 const firebaseConfig = {
 
-    apiKey: "YOUR_API_KEY",
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+apiKey: "AIzaSyBTGjmpUk_21vRazMncTdNGd1g0r1l20Bg",
+authDomain: "emergency-sos-system-2717b.firebaseapp.com",
+projectId: "emergency-sos-system-2717b",
+storageBucket: "emergency-sos-system-2717b.firebasestorage.app",
+messagingSenderId: "831859323537",
+appId: "1:831859323537:web:8627060a5cda348fd48530",
+measurementId: "G-FXQ7W4Z1Z3"
+};
 
     authDomain:
         "emergency-sos-system-2717b.firebaseapp.com",
@@ -49,7 +58,7 @@ const firebaseConfig = {
     messagingSenderId:
         "831859323537",
 
-    appId: "YOUR_APP_ID",
+    1:831859323537:web:8627060a5cda348fd48530
 
     measurementId:
         "G-T8V9F5B3Q8"
