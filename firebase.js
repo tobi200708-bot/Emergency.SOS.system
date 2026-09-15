@@ -62,7 +62,13 @@ const app = initializeApp(firebaseConfig);
 
 const auth = getAuth(app);
 
-
+signInAnonymously(auth)
+    .then(() => {
+        console.log("Anonymous login successful");
+    })
+    .catch((error) => {
+        console.error("Anonymous login error:", error);
+    });
 // =====================================================
 // INITIALIZE FIRESTORE
 // =====================================================
