@@ -130,7 +130,7 @@ window.firebaseAuth = auth;
 // EXPOSE FIRESTORE FUNCTIONS
 // =====================================================
 
-window.firebaseFunctions = {
+window.firebaseFunctions = {signInAnonymously
 
     collection,
     addDoc,
